@@ -35,7 +35,20 @@
     .header-content {
         margin-bottom: 50px;
     }
-  
+
+    .cards-block {
+        flex-direction: column;
+
+        .card {
+            flex: 0 0 100%;
+            margin-bottom: 50px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+    
 }
 
 @media screen and (max-width: 840px) {
@@ -77,15 +90,24 @@
         &-info {
             &-contacts {
                 a {
-                    font-size: 16px !important;
-                    img {
-                        // display: none;
-                    }
+                    font-size: 16px;
                 }
             }
         }
         h1 {
             font-size: 24px;
+        }
+    }
+
+    .section h2 {
+        font-size: 40px;
+    }
+
+    .cards-block {
+        .card {
+            h4 {
+                font-size: 18px;
+            }
         }
     }
 }

@@ -20,17 +20,9 @@ body {
     margin: 0 auto;
 }
 
-.section {
-    padding: 50px 0;
-
-    h2 {
-        font-size: 48px;
-    }
-}
-
 
 .header {
-    background: url("../img/header/header-bg.png") center / cover no-repeat;
+    background: url("../img/header/header-bg.png") center / cover no-repeat fixed;
 
     &-info {
         padding-top: 50px;
@@ -210,7 +202,38 @@ body {
 }
 
 
-  
+.section {
+    padding: 50px 0;
+
+    h2 {
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+}
+
+.cards-block {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+        flex: 0 0 25%;
+
+        h4 {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            margin-bottom: 25px;
+
+            img {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+
 
 
 // Responsive
