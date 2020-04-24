@@ -1,0 +1,31 @@
+// .container breakpoints: 1170 - 1005 - 810 - 620 - 420
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 1005px;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    .container {
+        max-width: 810px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .container {
+        max-width: 620px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        max-width: 420px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        max-width: 100%;
+    }
+}
