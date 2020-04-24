@@ -24,8 +24,6 @@ body {
 
 
 .header {
-    width: 100%;
-    min-height: 100vh;
     background: url("../img/header/header-bg.png") center / cover no-repeat;
 
     &-info {
@@ -106,6 +104,7 @@ body {
 
 .header-content-wrapper {
     display: flex;
+    justify-content: space-between;
     padding-bottom: 100px;
 }
 
@@ -115,22 +114,76 @@ body {
 
     h1 {
         font-size: 45px;
+        line-height: 1.1;
     }
 
     p {
         font-weight: 300;
         font-size: 22px;
-        margin: 65px 0 30px;
+        margin: 70px 0 30px;
     }
 }
 
+.header-form {
+    flex: 0 0 31%;
+}
+
+.form-block {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    input:not(:last-child) {
+        color: #fff;
+        display: block;
+        background: none;
+        width: 90%;
+        border-bottom: 1px solid $c-primary;
+        padding-bottom: 5px;
+        margin: 45px auto;
+    }
+
+    input:last-child {
+        width: 100%;
+    }
+}
+
+.media-links-block {
+    text-align: center;
+    padding: 25px 30px;
+    
+    p {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+
+    a {
+        margin: 0 6px;
+        img {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            box-shadow: 0px 5px 9.5px 0.5px rgba(0, 0, 0, 0.5);
+        }
+        
+    }
+}
 
 .btn {
     display: block;
     text-align: center;
     font-size: 18px;
+    padding: 20px;
     font-weight: 500;
-    padding: 30px;
     text-transform: uppercase;
     background: $c-primary;
     color: #fff;
@@ -144,13 +197,15 @@ body {
 
     &--large {
         max-width: 450px;
+        padding: 30px;
     }
 }
 
 
-
+  
 
 
 
 // Responsive
 @import "responsive.scss";
+
