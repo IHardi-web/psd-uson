@@ -335,6 +335,7 @@ body {
 
 .form-block input:last-child {
   width: 100%;
+  cursor: pointer;
 }
 
 .media-links-block {
