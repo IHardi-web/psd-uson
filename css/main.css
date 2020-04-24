@@ -238,6 +238,42 @@ body {
   color: #b18248;
 }
 
+.nav {
+  margin: 25px 0 50px;
+}
+
+.nav .nav-menu {
+  background: #b18248;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav .nav-menu__item {
+  padding: 20px 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.nav .nav-menu__item:hover {
+  background: #fff;
+}
+
+.nav .nav-menu__item a {
+  padding: 20px;
+  color: #fff;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.nav .nav-menu__item a:hover {
+  color: #b18248;
+}
+
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 1005px;
