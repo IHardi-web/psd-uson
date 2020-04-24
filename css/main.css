@@ -356,7 +356,6 @@ body {
 .media-links-block a img {
   width: 25px;
   height: 25px;
-  border-radius: 50%;
   -webkit-box-shadow: 0px 5px 9.5px 0.5px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 5px 9.5px 0.5px rgba(0, 0, 0, 0.5);
 }
