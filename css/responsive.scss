@@ -4,17 +4,51 @@
     .container {
         max-width: 1005px;
     }
+
+    .header {
+        &-info {
+            &-contacts {
+                flex-direction: column;
+            }
+        }
+    }
+
 }
 
 @media screen and (max-width: 1035px) {
     .container {
         max-width: 810px;
     }
+
+    .nav-menu {
+        flex-direction: column;
+    }
+
+    .header-content-wrapper {
+        flex-direction: column;
+    }
+
+    .header-content, .header-form {
+        flex: 0 0 100%;
+    }
+
+    .header-content {
+        margin-bottom: 50px;
+    }
+  
 }
 
 @media screen and (max-width: 840px) {
     .container {
         max-width: 620px;
+    }
+
+    .header {
+        &-info {
+            .logo {
+                flex-direction: column;
+            }
+        }
     }
 }
 
@@ -22,10 +56,36 @@
     .container {
         max-width: 420px;
     }
+
+    .header-info {
+        flex-direction: column;
+    }
+
+    .header-content h1 {
+        font-size: 28px;
+    }
+
+    
 }
 
 @media screen and (max-width: 450px) {
     .container {
         max-width: 100%;
+    }
+
+    .header {
+        &-info {
+            &-contacts {
+                a {
+                    font-size: 16px !important;
+                    img {
+                        // display: none;
+                    }
+                }
+            }
+        }
+        h1 {
+            font-size: 24px;
+        }
     }
 }

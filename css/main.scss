@@ -10,16 +10,22 @@ $c-primary: #b18248;
 body {
     font-family: 'Gotham Pro', sans-serif;
     font-size: 15px;
+    overflow-x: hidden;
 }
 
 .container {
     width: 100%;
-    max-width: 1170px;
+    padding: 0 15px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .section {
-    padding: 100px 0;
+    padding: 50px 0;
+
+    h2 {
+        font-size: 48px;
+    }
 }
 
 
@@ -55,9 +61,9 @@ body {
                 font-size: 24px;
                 font-weight: 500;
 
-                display: inline-flex;
+                display: flex;
                 align-items: center;
-                margin: 0 25px;
+                margin: 8px 25px;
                 transition: .4s;
                 
                 img {
@@ -75,7 +81,7 @@ body {
 .nav {
     margin: 25px 0 50px;
 
-    .nav-menu {
+    &-menu {
         background: $c-primary;
         text-transform: uppercase;
         display: flex;
@@ -158,7 +164,7 @@ body {
 
 .media-links-block {
     text-align: center;
-    padding: 25px 30px;
+    padding: 25px 0;
     
     p {
         color: #fff;
@@ -172,6 +178,7 @@ body {
         img {
             width: 25px;
             height: 25px;
+            border-radius: 50%;
             box-shadow: 0px 5px 9.5px 0.5px rgba(0, 0, 0, 0.5);
         }
         
@@ -197,13 +204,13 @@ body {
 
     &--large {
         max-width: 450px;
+        width: 100%;
         padding: 30px;
     }
 }
 
 
   
-
 
 
 // Responsive
